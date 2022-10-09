@@ -1,5 +1,5 @@
 import React from "react";
-import { CheckCircleIcon, ShoppingCartIcon } from "@heroicons/react/24/solid";
+import { CheckCircleIcon } from "@heroicons/react/24/solid";
 const PriceSingle = ({ price }) => {
   return (
     <div className="">
