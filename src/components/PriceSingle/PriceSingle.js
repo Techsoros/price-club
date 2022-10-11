@@ -14,9 +14,12 @@ const PriceSingle = ({ price }) => {
           <span className="text-2xl">/month</span>
         </div>
         <div className="feature mx-auto">
-          {price.feature.map((adv) => (
+          {price.feature.map((adv, idx = 0) => (
             <ul>
-              <li className="text-[20px] text-gray-700 flex items-center ">
+              <li
+                key={idx}
+                className="text-[20px] text-gray-700 flex items-center "
+              >
                 <CheckCircleIcon className="w-8 mr-2"></CheckCircleIcon>
                 {adv}
               </li>

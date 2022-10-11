@@ -1,8 +1,8 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import PricingTable from "./components/PricingTable/PricingTable";
 import BestBatter from "./components/BestBatter/BestBatter";
+import News from "./components/News/News";
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
       <Navbar></Navbar>
       <BestBatter></BestBatter>
       <PricingTable></PricingTable>
+      <News></News>
     </div>
   );
 }
