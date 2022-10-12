@@ -5,11 +5,9 @@ import { Bars3BottomLeftIcon, XMarkIcon } from "@heroicons/react/24/solid";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const links = [
-    { id: 1, name: "Home", path: "/home" },
-    { id: 2, name: "Products", path: "/Products" },
-    { id: 3, name: "Catagories", path: "/Catagories" },
-    { id: 4, name: "Wishlist", path: "/Wishlist" },
-    { id: 5, name: "Contact", path: "/Contact" },
+    { id: 1, name: "Pricing", path: "/pricing" },
+    { id: 2, name: "Batsman", path: "/batsman" },
+    { id: 3, name: "information", path: "/information" },
   ];
   return (
     <nav className="md:py-5  bg-slate-300 ">
