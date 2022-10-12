@@ -3,7 +3,7 @@ import { Link, useLoaderData } from "react-router-dom";
 
 const UserDetails = () => {
   const details = useLoaderData();
-  const { email, website, phone, name } = details;
+  const { website, phone, name } = details;
   console.log(details);
   return (
     <div className="my-10  space-y-7">

@@ -9,7 +9,6 @@ const Navbar = () => {
     { id: 2, name: "Batsman", path: "/batsman" },
     { id: 3, name: "information", path: "/information" },
     { id: 4, name: "Our Clients", path: "/user" },
-    { id: 5, name: "All", path: "/" },
     { id: 6, name: "Blog", path: "/blog" },
   ];
   return (
