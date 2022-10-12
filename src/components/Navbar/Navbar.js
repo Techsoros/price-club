@@ -8,7 +8,9 @@ const Navbar = () => {
     { id: 1, name: "Pricing", path: "/pricing" },
     { id: 2, name: "Batsman", path: "/batsman" },
     { id: 3, name: "information", path: "/information" },
-    { id: 4, name: "All", path: "/" },
+    { id: 4, name: "Our Clients", path: "/user" },
+    { id: 5, name: "All", path: "/" },
+    { id: 6, name: "Blog", path: "/blog" },
   ];
   return (
     <nav className="md:py-5  bg-slate-300 ">

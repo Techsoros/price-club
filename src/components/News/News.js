@@ -20,13 +20,18 @@ const News = () => {
       });
   }, []);
   return (
-    <div className="news-card grid md:grid-cols-3 gap-8  container mx-auto">
-      {news.map((newsSingle) => (
-        <div className=" p-5 border-2 rounded-md border-blue-100 shadow-lg ">
-          <h2>{newsSingle.name}</h2>
-          <p>{newsSingle.view}</p>
-        </div>
-      ))}
+    <div className="">
+      <h1 className="font-bold text-6xl bg-slate-300 p-7 rounded-lg m-9 te text-gray-800 ">
+        Our News
+      </h1>
+      <div className="news-card grid md:grid-cols-3 gap-8  container mx-auto my-10">
+        {news.map((newsSingle) => (
+          <div className=" p-5 border-2 rounded-md border-blue-100 shadow-lg ">
+            <h2>{newsSingle.name}</h2>
+            <p>{newsSingle.view}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
