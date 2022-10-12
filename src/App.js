@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import PricingTable from "./components/PricingTable/PricingTable";
 import BestBatter from "./components/BestBatter/BestBatter";
 import News from "./components/News/News";
-import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 function App() {
   const router = createBrowserRouter([
     {
