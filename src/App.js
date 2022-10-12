@@ -10,6 +10,7 @@ function App() {
       path: "/pricing",
       element: (
         <div>
+          <Navbar></Navbar>
           <h1 className="my-3 text-3xl font-bold text-blue-500 ">Pricing</h1>
           <PricingTable></PricingTable>
         </div>
@@ -19,6 +20,7 @@ function App() {
       path: "/batsman",
       element: (
         <div>
+          <Navbar></Navbar>
           <h1 className="my-3 text-3xl font-bold text-blue-500 ">Batsman</h1>
           <BestBatter></BestBatter>
         </div>
@@ -28,15 +30,27 @@ function App() {
       path: "/information",
       element: (
         <div>
+          <Navbar></Navbar>
           <h1 className="my-3 text-3xl font-bold text-blue-500 ">News</h1>
           <News></News>
+        </div>
+      ),
+    },
+    {
+      path: "/",
+      element: (
+        <div>
+          <Navbar></Navbar>
+          <h1 className="my-3 text-3xl font-bold text-blue-500 ">All in one</h1>
+          <News></News>
+          <BestBatter></BestBatter>
+          <PricingTable></PricingTable>
         </div>
       ),
     },
   ]);
   return (
     <div className="App">
-      <Navbar></Navbar>
       <RouterProvider router={router}></RouterProvider>
     </div>
   );

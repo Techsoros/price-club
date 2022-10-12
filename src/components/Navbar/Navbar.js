@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Link from "../Link/Link";
+import Links from "../Links/Links";
 import { Bars3BottomLeftIcon, XMarkIcon } from "@heroicons/react/24/solid";
 
 const Navbar = () => {
@@ -8,6 +8,7 @@ const Navbar = () => {
     { id: 1, name: "Pricing", path: "/pricing" },
     { id: 2, name: "Batsman", path: "/batsman" },
     { id: 3, name: "information", path: "/information" },
+    { id: 4, name: "All", path: "/" },
   ];
   return (
     <nav className="md:py-5  bg-slate-300 ">
@@ -27,7 +28,7 @@ const Navbar = () => {
         ${open ? "top-10" : "top-[-1200px] "}`}
       >
         {links.map((link) => (
-          <Link key={link.id} value={link}></Link>
+          <Links key={link.id} value={link}></Links>
         ))}
       </ul>
     </nav>
